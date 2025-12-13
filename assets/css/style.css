@@ -2408,7 +2408,9 @@ hr {
     transition: all .6s ease-out 0s;
     position: relative;
     top: -5px;
-    margin-bottom: 25px
+    margin-bottom: 20px;
+    width: 400px;
+    height: 50px;
 }
 
 @media (max-width: 575px) {
@@ -2635,7 +2637,7 @@ hr {
 }
 
 .mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar {
-    background-color: red !important
+    background-color: #2E6C7B !important
 }
 
 .mobile_menu .slicknav_menu .slicknav_nav {
