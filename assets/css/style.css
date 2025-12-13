@@ -3120,6 +3120,14 @@ hr {
     top: -173px
 }
 
+@media (max-width: 575px) {
+    .count-down-area {
+        position: relative;
+        top: 0px
+    }
+
+}
+
 .count-down-area .count-down-wrapper {
     background-repeat: no-repeat;
     background-size: cover;
