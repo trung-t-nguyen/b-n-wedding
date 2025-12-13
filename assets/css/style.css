@@ -2560,6 +2560,12 @@ hr {
     }
 }
 
+@media (max-width: 575px) {
+     .main-header .main-menu ul li a {
+        padding: 0px 15px
+    }
+}
+
 .main-header .main-menu ul li:hover>a {
     color: #2E6C7B
 }
