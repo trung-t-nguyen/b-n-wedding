@@ -3068,6 +3068,11 @@ hr {
     margin-bottom: 10px
 }
 
+.pricing-card-area .single-card .card-top img {
+    width: 50px;
+    margin-bottom: 30px;
+}
+
 .pricing-card-area .single-card .card-top h4 {
     color: #2e3c40;
     font-size: 25px;
