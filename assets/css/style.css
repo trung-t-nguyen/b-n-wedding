@@ -3180,7 +3180,8 @@ hr {
     position: relative;
     height: 565px;
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    background-position: center
 }
 
 .gallery-area .single-gallery .thumb-content-box {
