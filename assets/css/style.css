@@ -3096,6 +3096,10 @@ hr {
     padding-right: 7px
 }
 
+.pricing-card-area .single-card .card-bottom ul li a {
+    color: #2E6C7B
+}
+
 .pricing-card-area .single-card .card-buttons {
     -webkit-transition: all .3s ease-out 0s;
     -moz-transition: all .3s ease-out 0s;
