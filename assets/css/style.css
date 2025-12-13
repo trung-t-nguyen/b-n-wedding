@@ -3117,7 +3117,7 @@ hr {
 
 .count-down-area {
     position: relative;
-    top: -73px
+    top: -173px
 }
 
 .count-down-area .count-down-wrapper {
@@ -3132,7 +3132,7 @@ hr {
 }
 
 .count-down-area .count-down-wrapper .single-counter span {
-    color: #fff;
+    color: #2E6C7B;
     font-size: 36px;
     line-height: 1;
     margin-bottom: 12px;
@@ -3144,7 +3144,7 @@ hr {
 
 .count-down-area .count-down-wrapper .single-counter p {
     font-size: 18px;
-    color: #fff;
+    color: #2E6C7B;
     line-height: 1;
     margin: 0;
     padding: 0;
