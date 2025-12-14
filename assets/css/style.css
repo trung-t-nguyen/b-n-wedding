@@ -2561,7 +2561,7 @@ hr {
 }
 
 @media (max-width: 575px) {
-     .main-header .main-menu ul li a {
+    .main-header .main-menu ul li a {
         padding: 0px 15px
     }
 }
@@ -3134,6 +3134,46 @@ hr {
 .count-down-area {
     position: relative;
     top: -173px
+}
+
+@media (min-width: 992px) {
+    .count-down-area .count-down-wrapper {
+        background-image: url(../img/icon/road.png);
+        background-size: contain;
+        --runner-current-position: 0%; /* The *static* position for the day */
+        --runner-end-step: 0%;
+    }
+
+    @keyframes run {
+        0% {
+            /* Start position */
+            left: 0%;
+        }
+
+        100% {
+            /* End position */
+            left: var(--runner-end-step);
+        }
+    }
+
+    .count-down-area .count-down-wrapper:after {
+        background-image: url(../img/icon/couple-run-1.png);
+        background-size: contain;
+        content: "";
+        position: absolute;
+        left: 0%;
+        top: 105px;
+        width: 60px;
+        height: 70px;
+        /* animation: run 3s ease-in-out forwards;
+         */
+        animation: none;
+    }
+
+    .count-down-area .count-down-wrapper.is-visible:after {
+        /* Now the animation is ONLY applied when the .is-visible class is present */
+        animation: run 1.5s ease-in forwards; 
+    }
 }
 
 @media (max-width: 575px) {

@@ -14,7 +14,9 @@ function updateDisplay(element, value, pad = false) {
     if (element) {
         if (pad) {
             // Pad start ensures numbers like '5' become '05'
-            element.innerText = String(value).padStart(2, '0');
+            // element.innerText = String(value).padStart(2, '0');
+            element.innerText = String(value);
+
         } else {
             element.innerText = value;
         }
@@ -63,6 +65,12 @@ function countdown() {
 
 // 1. Initial call to set the display immediately on page load
 countdown();
+
+  /* 14. counterUp*/
+  $('.counter').counterUp({
+    delay: 10,
+    time: 3000,
+  });
 
 // 2. Set up the interval to call the function every 1000ms (1 second)
 // This is what makes the countdown update in real-time.
