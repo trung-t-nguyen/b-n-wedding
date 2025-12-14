@@ -69,7 +69,7 @@ countdown();
   /* 14. counterUp*/
   $('.counter').counterUp({
     delay: 10,
-    time: 3000,
+    time: 2000,
   });
 
 // 2. Set up the interval to call the function every 1000ms (1 second)

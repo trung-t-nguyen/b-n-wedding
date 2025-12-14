@@ -3172,7 +3172,7 @@ hr {
 
     .count-down-area .count-down-wrapper.is-visible:after {
         /* Now the animation is ONLY applied when the .is-visible class is present */
-        animation: run 1.5s ease-in forwards; 
+        animation: run 2s ease-in forwards; 
     }
 }
 
