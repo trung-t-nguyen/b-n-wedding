@@ -250,59 +250,68 @@
     <script>
       // Gallery config: file is image file name, lg is the col-lg-x value
       const galleryConfig = [
-        { file: 'gallery1-bn.png', lg: 4 },
-        { file: 'gallery2-bn.png', lg: 8 },
-        { file: 'gallery3-bn.png', lg: 8 },
-         { file: 'gallery4-bn.png', lg: 4 },
-        // { file: 'gallery5-bn.png', lg: 4 },
-        // { file: 'gallery6-bn.png', lg: 4 },
-        // { file: 'gallery7-bn.png', lg: 4 },
-        // { file: 'gallery8-bn.png', lg: 4 },
-        // { file: 'gallery9-bn.png', lg: 4 },
-        // { file: 'gallery10-bn.png', lg: 4 },
-        // { file: 'gallery11-bn.png', lg: 4 },
-        // { file: 'gallery12-bn.png', lg: 4 },
-        // { file: 'gallery13-bn.png', lg: 4 },
-        // { file: 'gallery14-bn.png', lg: 4 },
-        // { file: 'gallery15-bn.png', lg: 4 },
-        // { file: 'gallery16-bn.png', lg: 4 },
-        // { file: 'gallery17-bn.png', lg: 4 },
-        // { file: 'gallery18-bn.png', lg: 4 },
-        // { file: 'gallery19-bn.png', lg: 4 },
-        // { file: 'gallery20-bn.png', lg: 4 },
-        // { file: 'gallery21-bn.png', lg: 4 },
-        // { file: 'gallery22-bn.png', lg: 4 },
-        // { file: 'gallery23-bn.png', lg: 4 },
-        // { file: 'gallery24-bn.png', lg: 4 },
-        // { file: 'gallery25-bn.png', lg: 4 },
-        // { file: 'gallery26-bn.png', lg: 4 },
-        // { file: 'gallery27-bn.png', lg: 4 },
-        // { file: 'gallery28-bn.png', lg: 4 },
-        // { file: 'gallery29-bn.png', lg: 4 },
-        // { file: 'gallery30-bn.png', lg: 4 },
-        // { file: 'gallery31-bn.png', lg: 4 },
-        // { file: 'gallery32-bn.png', lg: 4 },
-        // { file: 'gallery33-bn.png', lg: 4 },
-        // { file: 'gallery34-bn.png', lg: 4 },
-        // { file: 'gallery35-bn.png', lg: 4 }
+        {
+          file: "597949010_122156632436912845_1567374680333563530_n.jpg",
+          lg: 4,
+        },
+        {
+          file: "597559814_122156632448912845_7710516488851832021_n.jpg",
+          lg: 4,
+        },
+
+        {
+          file: "598149155_122156632472912845_7327405405093641054_n.jpg",
+          lg: 4,
+        },
+        {
+          file: "598975658_122156632694912845_6880581371863800270_n.jpg",
+          lg: 4,
+        },
+        {
+          file: "598350929_122156632580912845_623266723283254674_n.jpg",
+          lg: 4,
+        },
+        {
+          file: "598313130_122156632646912845_6218050551647090112_n.jpg",
+          lg: 4,
+        },
+        {
+          file: "599948782_122156632526912845_8454555972016799957_n.jpg",
+          lg: 6,
+        },
+
+        {
+          file: "601341176_122156632784912845_769822287362212659_n.jpg",
+          lg: 6,
+        },
       ];
-      const galleryGrid = document.getElementById('gallery-grid');
-      galleryConfig.forEach(item => {
+      const galleryGrid = document.getElementById("gallery-grid");
+      galleryConfig.forEach((item) => {
         const colClass = `col-lg-${item.lg} col-md-6`;
         const html = `
           <div class="${colClass}">
             <div class="single-gallery mb-30">
-              <div class="gallery-img" style="background-image: url(assets/img/gallery/${item.file});"></div>
+              <div class="gallery-img" style="background-image: url(assets/img/gallery-bn/${item.file});"></div>
               <div class="thumb-content-box">
                 <div class="thumb-content">
-                  <a href="assets/img/gallery/${item.file}" class="menorie-icon"><i class="ti-image"></i></a>
+                  <a href="assets/img/gallery-bn/${item.file}" class="menorie-icon"><i class="ti-image"></i></a>
                 </div>
               </div>
             </div>
           </div>
         `;
-        galleryGrid.insertAdjacentHTML('beforeend', html);
+        galleryGrid.insertAdjacentHTML("beforeend", html);
       });
+
+      var popUp = $(".menorie-icon");
+      if (popUp.length) {
+        popUp.magnificPopup({
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
+      }
     </script>
   </body>
 </html>
