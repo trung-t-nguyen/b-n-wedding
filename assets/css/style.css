@@ -3239,6 +3239,10 @@ hr {
     background-position: left center
 }
 
+.gallery-area .single-gallery .gallery-img.img-top {
+    background-position: top center
+}
+
 .gallery-area .single-gallery .thumb-content-box {
     position: relative
 }
