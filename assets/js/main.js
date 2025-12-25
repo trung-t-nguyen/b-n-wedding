@@ -138,12 +138,12 @@
   var client_list = $('.gallery-active');
   if (client_list.length) {
     client_list.owlCarousel({
-      slidesToShow: 8,
+      slidesToShow: 9,
       slidesToScroll: 1,
       loop: true,
       autoplay: true,
-      speed: 3000,
-      smartSpeed: 2000,
+      speed: 2000,
+      smartSpeed: 1000,
       nav: false,
       dots: false,
       margin: 0,
