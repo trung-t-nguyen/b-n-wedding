@@ -225,7 +225,7 @@
         { file: "8I8A8282.jpg", lg: 4 },
         { file: "8I8A8330.jpg", lg: 4 },
         { file: "8I8A8350.jpg", lg: 4 },
-        { file: "8I8A8404.jpg", lg: 12 },
+        { file: "8I8A8404.jpg", lg: 12, class: "img-left" },
         { file: "8I8A8426.jpg", lg: 4 },
         { file: "8I8A8450.jpg", lg: 4 },
         { file: "8I8A8466.jpg", lg: 4 },
@@ -266,7 +266,7 @@
         const html = `
           <div class="${colClass}">
             <div class="single-gallery mb-30">
-              <div class="gallery-img" style="background-image: url(assets/img/gallery-bn/${item.file});"></div>
+              <div class="gallery-img ${item.class || ''}" style="background-image: url(assets/img/gallery-bn/${item.file});"></div>
               <div class="thumb-content-box">
                 <div class="thumb-content">
                   <a href="assets/img/gallery-bn/${item.file}" class="menorie-icon"><i class="ti-image"></i></a>
